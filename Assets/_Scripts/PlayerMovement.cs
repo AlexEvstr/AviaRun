@@ -19,12 +19,12 @@ public class PlayerMovement : MonoBehaviour
             var targetPosition = new Vector3(transform.position.x + delta, transform.position.y, transform.position.z);
             if (targetPosition.x == -3)
             {
-                transform.DOMove(new Vector3(2, transform.position.y, 0), 0.3f)
+                transform.DOMove(new Vector3(2, transform.position.y, -1), 0.3f)
                     .OnComplete(() => _isMoving = false);
             }
             else if (targetPosition.x == 3)
             {
-                transform.DOMove(new Vector3(-2, transform.position.y, 0), 0.3f)
+                transform.DOMove(new Vector3(-2, transform.position.y, -1), 0.3f)
                     .OnComplete(() => _isMoving = false);
             }
             else 
