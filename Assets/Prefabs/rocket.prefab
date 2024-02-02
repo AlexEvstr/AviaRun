@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _explosion: {fileID: 6169823545877315734, guid: dcb930275eb6047daa0ef43e289279ac, type: 3}
+  _doubleScoreBonus: {fileID: 1581645751432551634, guid: 8805a1d76387f4c3c9c5f4bd48b1d75f, type: 3}
 --- !u!1 &8500454692045271216
 GameObject:
   m_ObjectHideFlags: 0

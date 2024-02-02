@@ -9,6 +9,7 @@ public class Score : MonoBehaviour
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private TMP_Text _BestscoreText;
     public static int score;
+    public static float time = 1f;
     private int _bestScore;
 
     private void OnEnable()
@@ -27,7 +28,7 @@ public class Score : MonoBehaviour
         while (true)
         {
             score++;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(time);
         }
     }
 
