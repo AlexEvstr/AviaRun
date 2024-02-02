@@ -8,7 +8,7 @@ public class RocketCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.gameObject.CompareTag("Player"))
+        if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
             GameObject explosion = Instantiate(_explosion);

@@ -860,6 +860,7 @@ GameObject:
   - component: {fileID: 2089572718}
   - component: {fileID: 2089572717}
   - component: {fileID: 2089572719}
+  - component: {fileID: 2089572720}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -909,6 +910,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 1520009329373507043, guid: a0eeec33830e743378c340107f2b028a, type: 3}
+--- !u!114 &2089572720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089572716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfec86ef2623940ad8f747e9a40c6e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obstacle: {fileID: 5741406477255499539, guid: 50687eddb3da847cdb317e44da88b6a7, type: 3}
 --- !u!1 &2119986976
 GameObject:
   m_ObjectHideFlags: 0
