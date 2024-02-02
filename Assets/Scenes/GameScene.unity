@@ -619,6 +619,7 @@ GameObject:
   - component: {fileID: 1735139707}
   - component: {fileID: 1735139708}
   - component: {fileID: 1735139709}
+  - component: {fileID: 1735139710}
   m_Layer: 0
   m_Name: plane
   m_TagString: Player
@@ -686,7 +687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735139704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.59, z: -1}
+  m_LocalPosition: {x: 0, y: -2.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -752,6 +753,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &1735139710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735139704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b110ea313e35427e8da554aa7eeb119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2057362937
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +874,7 @@ GameObject:
   - component: {fileID: 2089572717}
   - component: {fileID: 2089572719}
   - component: {fileID: 2089572720}
+  - component: {fileID: 2089572721}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -923,6 +937,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _obstacle: {fileID: 5741406477255499539, guid: 50687eddb3da847cdb317e44da88b6a7, type: 3}
+--- !u!114 &2089572721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089572716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921c66408c51242339dc5eff93ff44fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shieldBonus: {fileID: 1263873248432003199, guid: 99cf43b54e2124133ab063f1a1faa890, type: 3}
 --- !u!1 &2119986976
 GameObject:
   m_ObjectHideFlags: 0
