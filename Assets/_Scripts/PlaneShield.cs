@@ -10,7 +10,6 @@ public class PlaneShield : MonoBehaviour
 
         if (shield != null)
         {
-            Debug.Log("shielded");
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         else

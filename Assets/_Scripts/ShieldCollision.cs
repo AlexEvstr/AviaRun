@@ -11,7 +11,6 @@ public class ShieldCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            Debug.Log("bonus");
             TurnOnShield();
         }
     }
