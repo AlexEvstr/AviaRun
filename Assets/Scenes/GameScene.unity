@@ -2400,6 +2400,7 @@ GameObject:
   - component: {fileID: 2089572720}
   - component: {fileID: 2089572721}
   - component: {fileID: 2089572722}
+  - component: {fileID: 2089572723}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2489,6 +2490,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreText: {fileID: 1435982186}
   _BestscoreText: {fileID: 920400297}
+--- !u!114 &2089572723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089572716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfe82d0d8ede4787adeb77530768e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane_1: {fileID: 21300000, guid: 62a583b120f1443ffbc39c9b24b84ad5, type: 3}
+  _plane_2: {fileID: 21300000, guid: 89d42916acea3425a8e380ad799af1df, type: 3}
+  _plane_3: {fileID: 21300000, guid: 887cc623bff6646f7a2fb1356080cb3f, type: 3}
+  _plane: {fileID: 1735139705}
 --- !u!1 &2119986976
 GameObject:
   m_ObjectHideFlags: 0
