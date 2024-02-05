@@ -6,10 +6,48 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject _mainMenu;
-
     [SerializeField] private GameObject _settingsPanel;
-
     [SerializeField] private GameObject _custimizerPanel;
+
+    [SerializeField] private GameObject _soundOn;
+    [SerializeField] private GameObject _soundOff;
+
+    private bool _sound = true;
+
+    private void OnEnable()
+    {
+        int sound = PlayerPrefs.GetInt("sound", -1);
+        if (sound == 0)
+        {
+            _soundOn.SetActive(true);
+            _soundOff.SetActive(false);
+            _sound = true;
+            AudioListener.volume = 1;
+        }
+        else if (sound == 1)
+        {
+            _soundOn.SetActive(false);
+            _soundOff.SetActive(true);
+            _sound = false;
+            AudioListener.volume = 0;
+        }
+    }
+
+    public void SoundOn()
+    {
+        _soundOn.SetActive(true);
+        _soundOff.SetActive(false);
+        AudioListener.volume = 1;
+        _sound = true;
+    }
+
+    public void SoundOff()
+    {
+        _soundOn.SetActive(false);
+        _soundOff.SetActive(true);
+        AudioListener.volume = 0;
+        _sound = false;
+    }
 
     public void PlayBtn()
     {
@@ -38,5 +76,13 @@ public class MenuManager : MonoBehaviour
     {
         _custimizerPanel.SetActive(false);
         _mainMenu.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        if (_sound == true)
+            PlayerPrefs.SetInt("sound", 0);
+        else if (_sound == false)
+            PlayerPrefs.SetInt("sound", 1);
     }
 }
