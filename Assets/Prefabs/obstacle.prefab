@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5741406477255499536}
   - component: {fileID: 4229339371237001016}
   - component: {fileID: -4223957541189212773}
-  - component: {fileID: -220399305164693368}
   m_Layer: 0
   m_Name: obstacle
   m_TagString: Obstacle
@@ -33,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5741406477255499536
 SpriteRenderer:
@@ -123,17 +122,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c06a61a07edc4ff78070711f595a7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-220399305164693368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5741406477255499539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b342b842794394dfdb6a2b8fdad6478a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

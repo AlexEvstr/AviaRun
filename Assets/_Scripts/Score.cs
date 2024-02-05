@@ -10,12 +10,12 @@ public class Score : MonoBehaviour
     [SerializeField] private TMP_Text _BestscoreText;
     public static int score;
     public static float time = 1f;
-    private int _bestScore;
+    public static int bestScore;
 
     private void OnEnable()
     {
         //score = PlayerPrefs.GetInt("score", 0);
-        _bestScore = PlayerPrefs.GetInt("bestScore", 0);
+        bestScore = PlayerPrefs.GetInt("bestScore", 0);
     }
 
     private void Start()
@@ -34,16 +34,16 @@ public class Score : MonoBehaviour
 
     private void Update()
     {
-        if (score > _bestScore)
-            _bestScore = score;
+        if (score > bestScore)
+            bestScore = score;
 
         _scoreText.text = "Score: " + score.ToString();
-        _BestscoreText.text = "Best:    " + _bestScore.ToString();
+        _BestscoreText.text = "Best:    " + bestScore.ToString();
     }
 
     private void OnDisable()
     {
         //PlayerPrefs.SetInt("score", score);
-        PlayerPrefs.SetInt("bestScore", _bestScore);
+        PlayerPrefs.SetInt("bestScore", bestScore);
     }
 }

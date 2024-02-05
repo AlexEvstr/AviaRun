@@ -13,6 +13,7 @@ public class RocketCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
+            Destroy(collision.gameObject);
             GameObject explosion = Instantiate(_explosion);
             explosion.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z);
 
