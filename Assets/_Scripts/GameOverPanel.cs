@@ -12,7 +12,7 @@ public class GameOverPanel : MonoBehaviour
     private void Start()
     {
         _score.text = "Score: " + Score.score.ToString();
-        _bestScore.text = "Score: " + Score.bestScore.ToString();
+        _bestScore.text = "Best score: " + Score.bestScore.ToString();
     }
 
     public void TryAgainBtn()
