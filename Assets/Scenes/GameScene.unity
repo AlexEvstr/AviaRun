@@ -666,7 +666,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 30, y: 45.01099}
+  m_Size: {x: 3.44, y: 4.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2365,7 +2365,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 30, y: 45.01099}
+  m_Size: {x: 3.44, y: 4.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2401,6 +2401,7 @@ GameObject:
   - component: {fileID: 2089572721}
   - component: {fileID: 2089572722}
   - component: {fileID: 2089572723}
+  - component: {fileID: 2089572724}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2506,6 +2507,23 @@ MonoBehaviour:
   _plane_2: {fileID: 21300000, guid: 89d42916acea3425a8e380ad799af1df, type: 3}
   _plane_3: {fileID: 21300000, guid: 887cc623bff6646f7a2fb1356080cb3f, type: 3}
   _plane: {fileID: 1735139705}
+--- !u!114 &2089572724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089572716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64cc5cf05c084fd7a0f612b856b01d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _road_1: {fileID: 21300000, guid: 4180831647e414395ad5e8a06beecaa9, type: 3}
+  _road_2: {fileID: 21300000, guid: 6680826fac74045ce86f331bca898799, type: 3}
+  _road_3: {fileID: 21300000, guid: dc4cf7737b7664f19be9cb95ef8ac979, type: 3}
+  _bg_1: {fileID: 373761012}
+  _bg_2: {fileID: 2057362939}
 --- !u!1 &2119986976
 GameObject:
   m_ObjectHideFlags: 0

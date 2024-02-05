@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _mainMenu;
     [SerializeField] private GameObject _settingsPanel;
     [SerializeField] private GameObject _custimizerPanel;
+    [SerializeField] private GameObject _roadChanger;
 
     [SerializeField] private GameObject _soundOn;
     [SerializeField] private GameObject _soundOff;
@@ -75,6 +76,18 @@ public class MenuManager : MonoBehaviour
     public void CloseCustomizer()
     {
         _custimizerPanel.SetActive(false);
+        _mainMenu.SetActive(true);
+    }
+
+    public void OpenRoadChanger()
+    {
+        _mainMenu.SetActive(false);
+        _roadChanger.SetActive(true);
+    }
+
+    public void CloseRoadChanger()
+    {
+        _roadChanger.SetActive(false);
         _mainMenu.SetActive(true);
     }
 
